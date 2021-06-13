@@ -11,9 +11,12 @@ console.log(ulEl.nodeName + ' (before)', ulEl.cloneNode(true));
 
 // --- write some code ---
 
+ulEl.removeChild(ulEl.children[3]);
+const replacerEl = document.createElement('li');
+replacerEl.innerHTML = 'frog';
 
-
-
+ulEl.replaceChild(replacerEl, ulEl.children[1]);
+ulEl.children[0].innerHTML = "toad";
 
 // --- --- --- --- --- ---
 

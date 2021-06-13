@@ -9,7 +9,14 @@ console.log(buttonEl.nodeName, buttonEl.cloneNode(true));
 
 const truthTestHandler = () => {
   // ask a user to confirm if they are honest
+  let confirmed = false;
+  confirmed = confirm('are you honest?');
   // let them know what you think of their answer
+  if (confirmed) {
+    alert('thank you')
+  } else {
+    alert('i am disappointed')
+  }
 
 };
 

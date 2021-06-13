@@ -15,8 +15,26 @@ console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
 
+const tableEl = divEl.children[0];
+const tbodyEl = tableEl.children[0];
+const trEl1 = tbodyEl.children[0];
+const trEl2 = tbodyEl.children[1];
 
+const tdEl1 = document.createElement('td');
+tdEl1.innerHTML = "a";
+trEl1.appendChild(tdEl1);
 
+const tdEl2 = document.createElement('td');
+tdEl2.innerHTML = "b";
+trEl1.appendChild(tdEl2);
+
+const tdEl3 = document.createElement('td');
+tdEl3.innerHTML = "c";
+trEl2.appendChild(tdEl3);
+
+const tdEl4 = document.createElement('td');
+tdEl4.innerHTML = "d";
+trEl2.appendChild(tdEl4);
 
 // --- --- --- --- --- ---
 
