@@ -22,7 +22,7 @@
     </main>
 
     <script id="handlers">
-      const demoHandler = event => {
+      const demoHandler = (event) => {
         debugger;
 
         const eventType = event.type;
@@ -38,13 +38,13 @@
     </script>
 
     <script id="listeners">
-      const theButton = document.getElementById('the-button');
-      theButton.addEventListener('click', demoHandler);
-      theButton.addEventListener('mouseleave', demoHandler);
+      const theButton = document.getElementById("the-button");
+      theButton.addEventListener("click", demoHandler);
+      theButton.addEventListener("mouseleave", demoHandler);
 
-      const theInput = document.getElementById('the-input');
-      theInput.addEventListener('keyup', demoHandler);
-      theInput.addEventListener('mouseleave', demoHandler);
+      const theInput = document.getElementById("the-input");
+      theInput.addEventListener("keyup", demoHandler);
+      theInput.addEventListener("mouseleave", demoHandler);
     </script>
   </body>
 </html>
